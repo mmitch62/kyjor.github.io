@@ -138,8 +138,8 @@
                 });
 				
 				
-				 map.controls[google.maps.ControlPosition.TOP_CENTER].push(
-      document.getElementById('info'));
+			//	 map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+     // document.getElementById('info'));
 
   marker1 = new google.maps.Marker({
     map: map,
@@ -190,9 +190,9 @@ function update() {
 
 
 				
-               // var trafficLayer = new google.maps.TrafficLayer();
-                //    trafficLayer.setMap(map);
-               // infoWindow = new google.maps.InfoWindow;
+                var trafficLayer = new google.maps.TrafficLayer();
+                    trafficLayer.setMap(map);
+                infoWindow = new google.maps.InfoWindow;
         
                 // Try HTML5 geolocation.
                 if (navigator.geolocation) {
